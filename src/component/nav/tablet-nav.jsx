@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import WhiteButton from "../ui/white-btn";
+import WhiteButton from "../ui/button";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";

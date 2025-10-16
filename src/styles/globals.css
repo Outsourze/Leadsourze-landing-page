@@ -4,10 +4,12 @@
 /* === Design Tokens / Brand Theme === */
 :root {
   /* Brand Colors */
-  --color-brand-orange: #FF6600;
+  --color-brand-green: #2E7D32;
+  --color-brand-slight-green: #70AF73;
+  --color-slight-orange: #FF914D;
+  --color-dark-navy: #181E4B;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-gray: #808080;
   --off-white: #FAFAFA;
   --color-slight-black: #1E1E1F;
 
@@ -39,7 +41,6 @@
 /* === Base Styles === */
 body {
   background-color: var(--background);
-  color: var(--primary-text-color);
 }
 
 /* Example utility: use this in Tailwind via className="bg-texture-orange-overlay" */
@@ -49,20 +50,16 @@ body {
 
 @layer utilities {
   /* font family */
-  .font-cta {
-    font-family: var(--font-space-grotesk);
-  }
-
   .font-heading {
-    font-family: var(--font-sora);
-  }
-
-  .font-jakarta {
     font-family: var(--font-jakarta);
   }
 
+  .font-cta {
+    font-family: var(--font-urban);
+  }
+
   .main-container {
-    font-family: var(--font-inter);
+    font-family: var(--font-openSans);
   }
   /*  */
 
@@ -74,24 +71,27 @@ body {
     text-shadow: var(--text-shadow-heading);
   }
 
-  .brand-bg-orange {
-    background-color: var(--color-brand-orange);
+  .brand-bg-green {
+    background-color: var(--color-brand-green);
   }
 
-  .brand-text-orange {
-    color: var(--color-brand-orange);
+  .brand-text-green {
+    color: var(--color-brand-green);
   }
 
-  .brand-bg-offwhite {
-    background-color: var(--off-white);
+  .bg-slight-green {
+    background-color: var(--color-brand-slight-green);
+  }
+  .text-slight-green {
+    color: var(--color-brand-slight-green);
   }
 
-  .card-bg-slight-black {
-    background-color: var(--color-slight-black);
+  .text-navy {
+    color: var(--color-dark-navy);
   }
 
-  .footer-getstarted-banner-bg {
-    background-color: #020609;
+  .bg-slight-orange {
+    background-color: var(--color-slight-orange);
   }
 
   .mask-spotlight {
