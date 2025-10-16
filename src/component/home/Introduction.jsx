@@ -119,7 +119,7 @@ const Introduction = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="absolute right-28 top-22 z-10 w-[220px] h-[300]">
+                    <div className="absolute right-28 top-22 z-10 w-[220px] h-[300px]">
                         <div className="relative w-full h-full">
                             <Image 
                                 className="absolute -top-3 left-1"

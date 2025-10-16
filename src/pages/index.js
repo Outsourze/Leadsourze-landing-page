@@ -1,3 +1,5 @@
+import Banner from "@/component/home/Banner";
+import HowItWork from "@/component/home/HowItWork";
 import Introduction from "@/component/home/Introduction";
 
 export default function Home() {
@@ -5,6 +7,8 @@ export default function Home() {
     <div className="flex flex-col 
       lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
       <Introduction />
+      <Banner />
+      <HowItWork />
     </div>
   );
 }
