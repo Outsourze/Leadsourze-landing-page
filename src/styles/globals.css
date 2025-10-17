@@ -10,7 +10,7 @@
   --color-dark-navy: #181E4B;
   --color-black: #000000;
   --color-white: #ffffff;
-  --off-white: #FAFAFA;
+  --off-white: #fdf6f6;
   --color-slight-black: #1E1E1F;
 
   /* border */
@@ -90,8 +90,16 @@ body {
     color: var(--color-dark-navy);
   }
 
+  .text-slight-black {
+    color: var(--color-slight-black);
+  }
+
   .bg-slight-orange {
     background-color: var(--color-slight-orange);
+  }
+  
+  .bg-offwhite {
+    background-color: var(--off-white);
   }
 
   .mask-spotlight {
