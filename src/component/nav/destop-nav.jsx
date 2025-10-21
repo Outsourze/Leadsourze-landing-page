@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Button from "../ui/button";
-
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const DesktopNav = () => {
   return (
@@ -25,7 +25,13 @@ const DesktopNav = () => {
         Prices
       </Link>
 
-      <Button url={"/"} text={"Contact US"} bgColor={"bg-slight-orange"} textColor={"text-white"}/>
+
+      <div className="flex items-center gap-3">
+        <Button url={"/"} bgColor={"bg-slight-orange"} textColor={"text-white"}>
+          Contact Us
+          <BiSolidPhoneCall size={18}/>
+        </Button>
+      </div>
     </div>
   );
 };

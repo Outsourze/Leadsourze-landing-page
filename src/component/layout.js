@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "./header";
-// import Footer from "./footer/footer" ;
+import Footer from "./footer/footer" ;
 import { oneSans, urban, jakarta } from '../utility/font';
 
 export default function Layout({ children }) {
@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         <main className='lg:pt-20 lg:pb-16 md:py-16 md:pb-5 max-md:py-16 max-sm:pb-2'>
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )

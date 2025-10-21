@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Button = ({
-    text,
+    children,
     url,
     style,
     onClick,
@@ -11,11 +11,11 @@ const Button = ({
     return (
         <Link 
             onClick={onClick}
-            className={`${style} ${bgColor} ${textColor} font-cta py-2 px-4 rounded-md 
+            className={`${style} ${bgColor} ${textColor} font-cta py-2 px-4 rounded-md flex items-center gap-2
             max-md:py-2 max-md:px-3 max-md:text-sm`}
             href={url}
         >
-            {text}
+            {children}
         </Link>
     )
 }

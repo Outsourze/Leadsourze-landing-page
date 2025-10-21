@@ -63,14 +63,6 @@ body {
   }
   /*  */
 
-  .shadow-menu {
-    box-shadow: var(--menu-shadow);
-  }
-
-  .text-shadow-heading {
-    text-shadow: var(--text-shadow-heading);
-  }
-
   .brand-bg-green {
     background-color: var(--color-brand-green);
   }
@@ -108,5 +100,9 @@ body {
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
+  }
+
+  .shadow-1 {
+    box-shadow: 2px 2px 12px #5d73f128;
   }
 }

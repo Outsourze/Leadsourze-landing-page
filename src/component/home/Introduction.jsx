@@ -20,24 +20,32 @@ const Introduction = () => {
         >
             <div className="flex items-center justify-between">
                 <div className="w-1/2 flex flex-col gap-8 items-start">
-                    <div className="bg-slight-green rounded-full px-5 py-3 font-bold font-heading">
+                    <div className="rounded-lg px-5 py-3 font-bold font-heading shadow-1">
                         <p className="brand-text-green">Discover new opportunities and connections</p>
                     </div>
                     <h1 className="text-navy text-7xl font-heading font-extrabold">Your Leads. <br/>Our Calls. <br/> Smarter Sales.</h1>
                     <p className="brand-text-green leading-7">Lead Sourze delivers professional telesales campaigns for New Zealand businesses across real estate, solar, finance, services, and more. With proven systems, expert oversight, and AI-enhanced calling, we turn your contact lists into qualified conversations, appointments, and measurable results.</p>
                     <div className="flex items-center gap-5">
-                        <Button style={"!p-4"} url={"/"} text={"Schedule a Consultation"} bgColor={"brand-bg-green"} textColor={"text-white"}/>
-                        <Button style={"!p-4"} url={"/"} text={"See Our Pricing"} bgColor={"brand-bg-green"} textColor={"text-white"}/>
+                        <Button style={"!p-4"} url={"/"} bgColor={"brand-bg-green"} textColor={"text-white"}>
+                            Schedule a Consultation
+                        </Button>
+                        <Button style={"!p-4"} url={"/"} bgColor={"brand-bg-green"} textColor={"text-white"}>
+                            See Our Pricing
+                        </Button>
                     </div>
                 </div>
                 <div className="w-1/2 h-[700px] relative overflow-hidden">
                     <div className="w-full absolute inset-0 z-0">
-                        <Image 
+                        <div className="relative w-full h-full">
+                          <Image
                             src={map}
                             alt="map"
-                            className="object-cover object-center"
+                            className="object-cover object-center brightness-[0.95]"
                             fill
-                        />
+                          />
+                          {/* Gradient overlay */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-[#F7F7FD]/95 via-[#F7F7FD]/70 to-[#eaeaf5]/20" />
+                        </div>
                     </div>
                     <div className="flex flex-col justify-between absolute left-3 top-25 z-10 w-[265px] h-[340px] rounded-xl overflow-hidden shadow-md bg-white">
                       {/* Image wrapper */}
