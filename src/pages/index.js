@@ -1,5 +1,4 @@
 import Banner from "@/component/home/Banner";
-import GetStarted from "@/component/home/GetStarted";
 import HowItWork from "@/component/home/HowItWork";
 import IndustryWeServe from "@/component/home/IndustryWeServe";
 import Introduction from "@/component/home/Introduction";
@@ -14,7 +13,6 @@ export default function Home() {
       <HowItWork />
       <IndustryWeServe />
       <WhyOutsourze />
-      <GetStarted />
     </div>
   );
 }

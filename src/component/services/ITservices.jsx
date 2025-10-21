@@ -1,0 +1,55 @@
+import computer from "@/assets/images/services/computer.png";
+import Image from "next/image";
+import { FaCheck } from "react-icons/fa6";
+import Button from "../ui/button";
+import { GoArrowRight } from "react-icons/go";
+
+const iTservicesData = [
+    "Flagging inactive or disconnected numbers",
+    "Removing dead records from your database",
+    "Tagging uninterested prospects",
+    "Providing structured reports so you always know your database status"
+]
+
+const ITServices = () => {
+    return (
+        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
+          xl:px-0 xl:gap-20 
+          lg:px-20 lg:gap-10 
+          md:px-20 
+          max-md:px-5 max-md:py-10"
+        >
+            <div className="flex items-center gap-5 justify-between w-full">
+                <div className="relative w-[40%] h-[400px]">
+                  <Image 
+                    src={computer}
+                    alt="computer"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="w-1/2 flex flex-col gap-5 items-start">
+                    <h1 className="font-heading text-4xl font-semibold text-navy">Database Management & Cleansing</h1>
+                    <p className="">With every campaign, we refine your lists to save you time and money:</p>
+
+                    <div className="flex flex-col gap-3">
+                        {iTservicesData.map((list, index) => (
+                            <div className="flex gap-3 items-center">
+                                <div className="rounded-xl p-3 brand-bg-green">
+                                    <FaCheck size={20} color="#ffffff"/>
+                                </div>
+                                <p className="font-medium">{list}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <Button url={"/"} bgColor={"brand-bg-green"} textColor={"text-white"} style={"!rounded-full px-7"}>
+                        Explore Category
+                        <GoArrowRight size={18}/>
+                    </Button>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default ITServices;
