@@ -8,6 +8,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import CopyRight from "./copyright";
+import GetStarted from "./GetStarted";
 
 
 
@@ -47,6 +48,7 @@ export const contactInfo = [{
 const Footer = () => {
     return (
         <div className="brand-bg-offwhite pt-4">
+            <GetStarted />
             <div className="pt-4 pb-16 max-w-7xl m-auto 
             xl:px-0 lg:px-20 md:px-20 max-md:px-5 max-md:relative max-md:border-t border-gray-400">
                 <div className="flex items-center justify-between 
