@@ -24,11 +24,12 @@ const GetStarted = () => {
              Ready to work with us?
            </h2>
            
-           <Button 
-             url={"/contact-us"}
+           <Button
+              url={"/contact-us"}
              style={"text-white text-sm gap-8 px-8 py-4 max-md:px-3 max-md:py-2 max-sm:gap-0 max-sm:whitespace-nowrap"} 
-             text={"Get Started"} 
-           />
+           >
+              Get Started
+           </Button>
          </div>
        </div>
     )

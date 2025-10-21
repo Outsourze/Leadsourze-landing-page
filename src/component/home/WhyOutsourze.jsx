@@ -62,7 +62,9 @@ const WhyOutsourze = () => {
                                 </div>
                             ))}
                         </div>
-                        <Button bgColor={"brand-bg-green"} textColor={"text-white"} url={"/"} text={"See Detailed Pricing"} style={"py-4 px-5"}/>
+                        <Button bgColor={"brand-bg-green"} textColor={"text-white"} url={"/"} style={"py-4 px-5"}>
+                            See Detailed Pricing
+                        </Button>
                     </div>
                     <div className="w-1/2 relative flex items-center justify-center">
                         <Image 
