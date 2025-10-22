@@ -17,11 +17,11 @@ const DesktopNav = () => {
         Services
       </Link>
 
-      <Link className="brand-text-slight-black font-medium" href="/about">
+      <Link className="brand-text-slight-black font-medium" href="/industries">
         Industries
       </Link>
 
-      <Link className="brand-text-slight-black font-medium" href="/about">
+      <Link className="brand-text-slight-black font-medium" href="/prices">
         Prices
       </Link>
 

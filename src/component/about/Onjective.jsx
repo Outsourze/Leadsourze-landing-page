@@ -2,7 +2,7 @@ import mission from "@/assets/images/about/mission.png";
 import values from "@/assets/images/about/values.png";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
-import { FaRegCircleCheck } from "react-icons/fa6";
+import { CiCircleCheck } from "react-icons/ci";
 
 
 const valuesData = [
@@ -56,7 +56,7 @@ const Objective = () => {
                         <div className="flex flex-col gap-5">
                             {valuesData.map((data, index) => (
                                 <div className="flex items-center gap-6">
-                                    <FaRegCircleCheck color="#2E7D32" size={30}/>
+                                    <CiCircleCheck color="#2E7D32" size={30}/>
                                     <div key={index}>
                                         <p className="brand-text-green text-xl"><span className="font-semibold">{data.title}</span> - {data.desc}</p>
                                     </div>
