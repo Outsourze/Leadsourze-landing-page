@@ -14,19 +14,19 @@ import GetStarted from "./GetStarted";
 
 // footer
 export const socialMedia = [{
-    url: "https://www.facebook.com/outsourze",
+    url: "https://www.facebook.com/leadsourze",
     alt: "facebook",
     icon: <FaFacebookF size={18}/>
 }, {
-    url: "https://www.instagram.com/outsourzeglobal",
+    url: "https://www.instagram.com/leadsourze/#",
     alt: "instagram",
     icon: <AiFillInstagram size={18}/>
 }, {
-    url: "https://www.tiktok.com/@outsourzeglobal",
+    url: "https://www.tiktok.com/@leadsourze",
     alt: "tiktok",
     icon: <FaTiktok size={18}/>
 }, {
-    url: "https://www.linkedin.com/company/outsourzeglobal",
+    url: "https://www.linkedin.com/company/leadsourze/",
     alt: "linken",
     icon: <FaLinkedinIn size={18}/>
 }]

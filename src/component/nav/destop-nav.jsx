@@ -27,7 +27,7 @@ const DesktopNav = () => {
 
 
       <div className="flex items-center gap-3">
-        <Button url={"/"} bgColor={"bg-slight-orange"} textColor={"text-white"}>
+        <Button url={"/contact-us"} bgColor={"bg-slight-orange"} textColor={"text-white"}>
           Contact Us
           <BiSolidPhoneCall size={18}/>
         </Button>
