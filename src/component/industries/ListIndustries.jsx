@@ -1,4 +1,5 @@
 import { CiCircleCheck } from "react-icons/ci";
+import SectionContainer from "../ui/SectionContainer";
 
 const industryData = [{
     title: "Home",
@@ -126,12 +127,7 @@ const industryData = [{
 
 const ListIndustries = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer>
             <div className="w-full flex flex-wrap justify-between gap-x-5 gap-y-10">
                 {industryData.map((list, index) => (
                     <div key={index} className="w-[31%] shadow-2 flex flex-col gap-5 p-5 rounded-xl">
@@ -149,7 +145,7 @@ const ListIndustries = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

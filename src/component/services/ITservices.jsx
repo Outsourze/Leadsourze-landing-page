@@ -1,8 +1,9 @@
 import computer from "@/assets/images/services/computer.png";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import { GoArrowRight } from "react-icons/go";
+import SectionContainer from "../ui/SectionContainer";
 
 const iTservicesData = [
     "Flagging inactive or disconnected numbers",
@@ -13,12 +14,7 @@ const iTservicesData = [
 
 const ITServices = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer>
             <div className="flex items-center gap-5 justify-between w-full">
                 <div className="relative w-[40%] h-[400px]">
                   <Image 
@@ -48,7 +44,7 @@ const ITServices = () => {
                     </Button>
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

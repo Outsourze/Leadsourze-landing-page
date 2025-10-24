@@ -1,4 +1,4 @@
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import Image from "next/image";
 import leftLine from "@/assets/images/home/left-line.png";
 import airPlane from "@/assets/images/home/airplane.png";

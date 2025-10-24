@@ -8,7 +8,8 @@ import { FaMap } from "react-icons/fa6";
 import { BsSendFill } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { BsBuildings } from "react-icons/bs";
-import Button from "../ui/button";
+import Button from "../ui/Button";
+import SectionContainer from "../ui/SectionContainer";
 
 
 const WhyOutsourzeData = [
@@ -29,36 +30,49 @@ const priceData = [
 
 const WhyOutsourze = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-            xl:px-0 xl:gap-20 
-            lg:px-20 lg:gap-10 
-            md:px-20 
-            max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer>
             <div className="flex flex-col gap-32">
                 {/* why section */}
                 <div className="flex flex-col gap-10">
-                    <h1 className="font-heading font-bold text-3xl">Why Businesses Choose Lead Sourze</h1>
+                    <h1 className="font-bold text-3xl font-heading">Why Businesses Choose Lead Sourze</h1>
                     <div className="flex flex-wrap justify-between gap-3">
                         {WhyOutsourzeData.map((data, index) => (
-                            <div key={index} className="w-[32%] p-5 rounded-2xl brand-bg-green text-white text-2xl">
-                                {data}
+                            <div key={index} className="p-5 rounded-2xl brand-bg-green
+                                md:w-[32%] 
+                                max-md:w-[48%]
+                                max-[500px]:!w-full">
+                                <p className="text-white 
+                                    lg:text-2xl
+                                    md:text-lg">{data}</p>
                             </div>
                         ))}
                     </div>
                 </div>
                 {/* prices section */}
-                <div className="flex items-start justify-between">
-                    <div className="w-1/2 flex flex-col gap-10 items-start">
+                <div className="flex items-start justify-between
+                    lg:flex-row
+                    md:flex-col-reverse md:gap-14
+                    max-md:flex-col-reverse max-md:gap-14">
+                    <div className="flex flex-col gap-10 items-start
+                        lg:w-1/2
+                        md:w-full
+                        max-md:w-full">
                         <div className="flex flex-col gap-3">
-                            <h1 className="font-heading font-bold text-3xl text-slight-black">Pricing Snapshot</h1>
+                            <h1 className="font-heading font-bold text-3xl ">Pricing Snapshot</h1>
                             <p>Enjoy different experiences in every place you visit and discover new and affordable adventures of course.</p>
                         </div>
-                        <div className="flex flex-col gap-10 px-8">
+                        <div className="flex flex-col 
+                            md:px-8 md:gap-10 
+                            max-md:px-0 max-md:gap-5">
                             {priceData.map((data, index) => (
-                                <div key={index} className="flex gap-5 items-center">
-                                    <RiCheckboxCircleLine size={30}/>
-                                    <h4 className="text-xl font-semibold text-slight-black">{data}</h4>
+                                <div key={index} className="flex items-center
+                                    md:gap-5 
+                                    max-md:gap-3">
+                                    <RiCheckboxCircleLine size={30} className="shrink-0"/>
+                                    <h4 className="font-semibold text-slight-black
+                                        lg:text-xl 
+                                        md:text-lg
+                                        max-md:text-base">{data}</h4>
                                 </div>
                             ))}
                         </div>
@@ -66,14 +80,18 @@ const WhyOutsourze = () => {
                             See Detailed Pricing
                         </Button>
                     </div>
-                    <div className="w-1/2 relative flex items-center justify-center">
+                    <div className="relative flex items-center justify-center
+                        lg:w-1/2
+                        md:w-full
+                        max-md:w-full">
                         <Image 
-                            className="absolute -top-[50%] -right-[10%] z-0"
+                            className="absolute -top-[50%] z-0 min-[1400px]:-right-[10%] right-0"
                             src={blurBg} 
                             alt="blur bg"
                             width={600}
                         />
-                        <div className="shadow-lg rounded-xl p-5 w-[70%] z-10 bg-white flex flex-col gap-5">
+                        <div className="shadow-lg rounded-xl p-5 z-10 bg-white flex flex-col gap-5
+                            md:w-[70%] max-md:w-full">
                             <Image src={castleImg} alt="castle"/>
                             <div className="relative flex flex-col gap-5">
                                 <h3 className="font-heading font-bold text-lg">Liburan ke Bali  🚗</h3>
@@ -96,7 +114,9 @@ const WhyOutsourze = () => {
                                     </div>
                                     <FaRegHeart className="brand-text-green"/>
                                 </div>
-                                <div className="absolute bg-white shadow-md flex items-start gap-5 -right-1/2 -translate-x-1/2 px-5 py-3 rounded-xl">
+                                <div className="absolute bg-white shadow-md flex items-start gap-5 px-5 py-3 rounded-xl
+                                    md:-right-1/2 md:-translate-x-1/2 
+                                    max-md:right-0">
                                     <div className="relative rounded-full overflow-hidden h-12 w-12">
                                         <Image src={flagImg} alt="flag" fill className="object-cover object-left"/>
                                     </div>
@@ -114,7 +134,7 @@ const WhyOutsourze = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

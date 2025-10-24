@@ -3,6 +3,7 @@ import values from "@/assets/images/about/values.png";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
+import SectionContainer from "../ui/SectionContainer";
 
 
 const valuesData = [
@@ -30,12 +31,7 @@ const valuesData = [
 
 const Objective = () => {
     return (
-        <div className="max-w-7xl py-20 m-auto flex items-center justify-between
-            xl:px-0 xl:gap-20 
-            lg:px-20 lg:gap-10 
-            md:px-20 
-            max-md:px-5 max-md:py-10"
-        >  
+        <SectionContainer>
             <div className="flex flex-col items-center justify-between gap-20">
                 <div className="flex items-center justify-between">
                     <div className="w-1/2 shadow-2 py-14 px-5 rounded-lg flex flex-col gap-10">
@@ -67,7 +63,7 @@ const Objective = () => {
                     <Image className="w-[40%]" src={values}/>
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

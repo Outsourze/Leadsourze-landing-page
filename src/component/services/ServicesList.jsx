@@ -2,15 +2,11 @@ import { BiCurrentLocation } from "react-icons/bi";
 import { FaCircleNotch } from "react-icons/fa6";
 import houses from "@/assets/images/services/houses.png";
 import Image from "next/image";
+import SectionContainer from "../ui/SectionContainer";
 
 const ServicesList = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex flex-col justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer style={"flex-col"}>
             <div className="flex items-start justify-between w-full gap-20">
                 <div className="flex flex-col gap-10 w-1/2">
                     <div className="flex flex-col gap-5 items-start shadow-2 px-6 py-10 rounded-2xl">
@@ -48,7 +44,7 @@ const ServicesList = () => {
                     <p className="text-gray-500">Polite but firm debt collection and payment reminder campaigns that protect your brand while recovering lost revenue.</p>
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

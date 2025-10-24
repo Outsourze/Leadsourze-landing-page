@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import { BiSolidPhoneCall } from "react-icons/bi";
 
 const DesktopNav = () => {

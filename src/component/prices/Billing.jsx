@@ -4,6 +4,7 @@ import location from "@/assets/images/prices/location.png";
 import suitcase from "@/assets/images/prices/suitcase.png";
 import suit from "@/assets/images/prices/suit.png";
 import { GoArrowUpRight } from "react-icons/go";
+import SectionContainer from "../ui/SectionContainer";
 
 const billingList = [{
     logo: suitcase,
@@ -18,12 +19,7 @@ const billingList = [{
 
 const Billing = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer>
           <div className="flex flex-col gap-10">
             <h2 className="text-[#444444] text-3xl font-bold">Billing & Deposits</h2>   
             <div className="flex items-start justify-between">
@@ -50,7 +46,7 @@ const Billing = () => {
                 </div>
             </div>
           </div>
-        </div>
+        </SectionContainer>
     )
 }
 

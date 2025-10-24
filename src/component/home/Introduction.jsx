@@ -1,4 +1,4 @@
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import Image from "next/image";
 import map from "@/assets/images/home/maps/map.png";
 import house from "@/assets/images/home/maps/house.png";
@@ -9,22 +9,27 @@ import icon3 from "@/assets/images/home/maps/Icon (2).png";
 import currentLocIcon from "@/assets/images/home/maps/Group 13639.png";
 import locIcon from "@/assets/images/home/maps/Group.png";
 import path from "@/assets/images/home/maps/path.png";
+import SectionContainer from "../ui/SectionContainer";
 
 const Introduction = () => {
     return (
-        <div className="max-w-7xl py-20 m-auto flex items-center justify-between
-            xl:px-0 xl:gap-20 
-            lg:px-20 lg:gap-10 
-            md:px-20 
-            max-md:px-5 max-md:py-10"
-        >
-            <div className="flex items-center justify-between">
-                <div className="w-1/2 flex flex-col gap-8 items-start">
+        <SectionContainer>
+            <div className="flex justify-between items-center">
+                <div className="flex flex-col gap-8 items-start
+                    xl:w-1/2 
+                    lg:w-[40%]
+                    md:w-full
+                    max-md:w-full">
                     <div className="rounded-lg px-5 py-3 font-bold font-heading shadow-1">
                         <p className="brand-text-green">Discover new opportunities and connections</p>
                     </div>
-                    <h1 className="text-navy text-7xl font-heading font-extrabold">Your Leads. <br/>Our Calls. <br/> Smarter Sales.</h1>
-                    <p className="brand-text-green leading-7">Lead Sourze delivers professional telesales campaigns for New Zealand businesses across real estate, solar, finance, services, and more. With proven systems, expert oversight, and AI-enhanced calling, we turn your contact lists into qualified conversations, appointments, and measurable results.</p>
+                    <h1 className="text-navy font-heading font-extrabold
+                        xl:text-7xl 
+                        lg:text-6xl
+                        md:text-6xl
+                        max-md:text-5xl">Your Leads. <br/>Our Calls. <br/> Smarter Sales.</h1>
+                    <p className="brand-text-green 
+                        xl:leading-7 lg:leading-6 md:leading-5 max-md:leading-5">Lead Sourze delivers professional telesales campaigns for New Zealand businesses across real estate, solar, finance, services, and more. With proven systems, expert oversight, and AI-enhanced calling, we turn your contact lists into qualified conversations, appointments, and measurable results.</p>
                     <div className="flex items-center gap-5">
                         <Button style={"!p-4"} url={"/"} bgColor={"brand-bg-green"} textColor={"text-white"}>
                             Schedule a Consultation
@@ -34,7 +39,8 @@ const Introduction = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="w-1/2 h-[700px] relative overflow-hidden">
+                <div className="h-[700px] relative overflow-hidden w-1/2 
+                    lg:block md:hidden max-md:hidden">
                     <div className="w-full absolute inset-0 z-0">
                         <div className="relative w-full h-full">
                           <Image
@@ -47,9 +53,13 @@ const Introduction = () => {
                           <div className="absolute inset-0 bg-gradient-to-r from-[#F7F7FD]/95 via-[#F7F7FD]/70 to-[#eaeaf5]/20" />
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between absolute left-3 top-25 z-10 w-[265px] h-[340px] rounded-xl overflow-hidden shadow-md bg-white">
+                    <div className="flex flex-col justify-between absolute left-3 top-25 z-10 rounded-xl overflow-hidden shadow-md bg-white
+                        xl:w-[265px] xl:h-[340px] 
+                        lg:w-[205px] lg:h-[280px]
+                        md:w-[185px] md:h-[240px]">
                       {/* Image wrapper */}
-                      <div className="relative w-full h-[165px]">
+                      <div className="relative w-full 
+                        xl:h-[165px] lg:h-[105px] md:h-[95px]">
                         <Image 
                           src={house}
                           alt="house"
@@ -62,9 +72,11 @@ const Introduction = () => {
                       <div className="p-4 font-heading flex flex-col justify-between gap-7">
                         <div>
                             <p>
-                                <span className="brand-text-green text-2xl font-extrabold">$2,700</span>/month
+                                <span className="brand-text-green font-extrabold
+                                    xl:text-2xl lg:text-xl">$2,700</span>/month
                             </p>
-                            <h3 className="text-navy text-2xl font-bold">Beverly Springfield</h3>
+                            <h3 className="text-navy font-bold
+                                xl:text-2xl lg:text-xl">Beverly Springfield</h3>
                         </div>
                         <div className="flex items-center justify-between py-3 border-t border-t-gray-200">
                             <div className="flex items-center gap-2">
@@ -127,7 +139,10 @@ const Introduction = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="absolute right-28 top-22 z-10 w-[220px] h-[300px]">
+                    <div className="absolute w-[220px] h-[300px]
+                        xl:right-28 xl:top-22 
+                        lg:right-3 lg:top-22
+                        md:right-0 md:top-22">
                         <div className="relative w-full h-full">
                             <Image 
                                 className="absolute -top-3 left-1"
@@ -144,7 +159,7 @@ const Introduction = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

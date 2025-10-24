@@ -1,4 +1,5 @@
 import { FaBriefcase } from "react-icons/fa";
+import SectionContainer from "../ui/SectionContainer";
 
 const perksList = [{
     icon: <FaBriefcase size={32} className="brand-text-green" />,
@@ -16,12 +17,7 @@ const perksList = [{
 
 const Perks = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer>
             <div className="flex w-full items-start justify-between gap-10">
                 <div className="w-[30%] flex flex-col gap-5">
                     <h2 className="font-heading font-bold text-navy text-3xl">Simple. Transparent. Performance Based.</h2>
@@ -37,7 +33,7 @@ const Perks = () => {
                     ))}
                 </div>
             </div>
-        </div>  
+        </SectionContainer>
     )
 }
 
