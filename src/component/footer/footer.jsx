@@ -3,6 +3,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa6";
+import LeadsourzeLogo from "@/assets/logo/Leadsourze Logo.svg";
 
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
@@ -55,8 +56,8 @@ const Footer = () => {
                 xl:gap-0 lg:gap-10 md:gap-10 max-md:gap-5 max-md:flex-col">
                     <div className="flex flex-col gap-5
                     xl:max-w-xl lg:max-w-lg">
-                        <Link href={"/"} aria-label="Outsouzed Home">
-                          logo
+                        <Link href={"/"} aria-label="Outsouzed Home" className='relative my-5'>
+                          <LeadsourzeLogo className="lg:w-52 md:w-36 max-md:w-36 absolute top-1/2 -translate-y-1/2"/>
                         </Link>
                
                         <p className="xl:text-[15px] md:text-xs max-md:text-xs max-md:border-b-gray-300 max-md:border-b max-md:pb-2 text-gray-500">Outsourze is a remote staffing and outsourcing solutions company based in the Philippines. .</p>

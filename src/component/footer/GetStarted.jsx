@@ -12,7 +12,8 @@ const GetStarted = () => {
       max-md:px-5 max-md:py-10"
     >
       <div className="brand-bg-green w-full px-10 py-12 flex flex-col justify-center items-center gap-10 rounded-xl relative overflow-hidden">
-        <h1 className="text-[#2D3134] font-heading font-semibold text-4xl text-center">
+        <h1 className="text-[#2D3134] font-heading font-semibold text-center
+          md:text-4xl max-md:text-3xl max-sm:text-2xl">
           Partner with the telesales specialists trusted by New Zealand businesses.
         </h1>
 
@@ -21,7 +22,7 @@ const GetStarted = () => {
         </Button>
 
         {/* FIXED IMAGE CONTAINER */}
-        <div className="absolute left-5 top-1/2 -translate-y-1/2 h-full w-[280px]">
+        <div className="absolute left-5 top-1/2 -translate-y-1/2 h-full w-[280px] md:hidden max-md:hidden">
           <Image
             src={leftLine}
             alt="leftline"

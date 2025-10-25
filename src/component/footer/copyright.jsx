@@ -3,7 +3,7 @@
 
 const CopyRight = () => {
     return (
-        <div className="brand-bg-green text-center py-2">
+        <div className="brand-bg-green text-center py-2 mt-5">
             <p className="text-white">© 2025 All rights reserved</p>
         </div>
     )
