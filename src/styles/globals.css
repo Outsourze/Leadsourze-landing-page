@@ -1,26 +1,112 @@
 @import "tailwindcss";
+@tailwind utilities;
 
+/* === Design Tokens / Brand Theme === */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Brand Colors */
+  --color-brand-green: #2E7D32;
+  --color-brand-slight-green: #70AF73;
+  --color-slight-orange: #FF914D;
+  --color-dark-navy: #181E4B;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --off-white: #fdf6f6;
+  --color-slight-black: #1E1E1F;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* border */
+  --border-black: #010205;
+
+  /* Text color */
+  --primary-text-color: var(--color-black);
+
+  /* Base Layout Colors */
+  --background: var(--color-white);
+  --foreground: var(--color-black);
+
+  /* Corner radius */
+  --radius: 1rem;
+
+  /* shadow */
+  --menu-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08);
+  --text-shadow-heading: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
 
+/* === Base Styles === */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+}
+
+/* Example utility: use this in Tailwind via className="bg-texture-orange-overlay" */
+.bg-texture-orange-overlay {
+  background: linear-gradient(rgba(255, 102, 0, 0.3), rgba(255, 102, 0, 0.3));
+}
+
+@layer utilities {
+  /* font family */
+  .font-heading {
+    font-family: var(--font-jakarta);
+  }
+
+  .font-cta {
+    font-family: var(--font-urban);
+  }
+
+  .main-container {
+    font-family: var(--font-openSans);
+  }
+  /*  */
+
+  .brand-bg-green {
+    background-color: var(--color-brand-green);
+  }
+
+  .brand-text-green {
+    color: var(--color-brand-green);
+  }
+
+  .bg-slight-green {
+    background-color: var(--color-brand-slight-green);
+  }
+  .text-slight-green {
+    color: var(--color-brand-slight-green);
+  }
+
+  .text-navy {
+    color: var(--color-dark-navy);
+  }
+
+  .text-slight-black {
+    color: var(--color-slight-black);
+  }
+
+  .bg-slight-orange {
+    background-color: var(--color-slight-orange);
+  }
+  
+  .bg-offwhite {
+    background-color: var(--off-white);
+  }
+
+  .mask-spotlight {
+    mask-image: radial-gradient(circle at center, transparent 80px, black 150px);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 80px, black 150px);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+  }
+
+  .shadow-1 {
+    box-shadow: 2px 2px 12px #5d73f128;
+  }
+
+  .shadow-2 {
+    box-shadow: 0px 3px 8px #00000026;
+  }
 }
