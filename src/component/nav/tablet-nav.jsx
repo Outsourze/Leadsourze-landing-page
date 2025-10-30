@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { BiSolidPhoneCall } from "react-icons/bi";
