@@ -1,4 +1,4 @@
-import BrandLabel from "./brand-label";
+import BrandLabel from "./BrandLabel";
 
 const SectionTitle = ({
     bannerTitle,

@@ -1,38 +1,32 @@
 import { useState } from "react";
 import Link from "next/link";
-import WhiteButton from "../ui/button";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import Button from "../ui/button";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { ServicesMenuData } from "@/pages/api/data";
+import { BiSolidPhoneCall } from "react-icons/bi";
+
 
 const TabletNav = () => {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMenuNavOpen, setIsMenuNavOpen] = useState(false);
-
-  const handleOpenServicesDropDown = () => {
-    setIsServicesOpen((prev) => !prev);
-  };
 
   const handleMenuClose = () => {
     setIsMenuNavOpen(false);
-    setIsServicesOpen(false);
   }
 
   return (
     <div className="flex items-center gap-5 relative">
       {/* Contact button */}
-      <WhiteButton 
-        onClick={handleMenuClose} 
-        text={"Contact Us"} 
-        url={"/contact-us"} 
-      />  
+      <div className="flex items-center gap-3">
+        <Button url={"/contact-us"} bgColor={"bg-slight-orange"} textColor={"text-white"}>
+          Contact Us
+          <BiSolidPhoneCall size={18}/>
+        </Button>
+      </div>
       {/* Menu toggle + dropdown */}
       <div className="relative flex items-center">
         <button
           onClick={() => {
             setIsMenuNavOpen((prev) => !prev);
-            setIsServicesOpen(false);
           }}
           className="p-1"
           aria-label="Toggle navigation menu"
@@ -48,58 +42,26 @@ const TabletNav = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.25, ease: "easeInOut" }}
-              className="absolute right-0 top-full mt-4 flex flex-col gap-2 bg-white p-4 rounded-xl shadow-md z-50 min-w-[300px]"
+              className="absolute right-0 top-full mt-4 flex flex-col gap-3 bg-white p-4 rounded-xl shadow-md z-50 min-w-[300px]"
             >
-              <Link
-                onClick={handleMenuClose} 
-                className="font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
-                href="/"
-              >
+              <Link className="brand-text-slight-black font-medium" href="/">
                 Home
               </Link>
 
-              <button
-                onClick={handleOpenServicesDropDown}
-                className="duration-300 font-cta font-medium flex items-center justify-between cursor-pointer w-full px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
-              >
-                Services
-                <MdKeyboardArrowDown
-                  size={22}
-                  className={`transition-transform duration-200 ${
-                    isServicesOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              <AnimatePresence>
-                {isServicesOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -5 }}
-                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                    className="flex flex-col gap-1 ml-2"
-                  >
-                    {ServicesMenuData.map((data, index) => (
-                      <Link
-                        onClick={handleMenuClose}
-                        key={index}
-                        href={data.url}
-                        className="block font-cta px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
-                      >
-                        {data.text}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <Link
-                onClick={handleMenuClose} 
-                className="font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
-                href="/about"
-              >
+              <Link className="brand-text-slight-black  font-medium" href="/about">
                 About
+              </Link>
+
+              <Link className="brand-text-slight-black font-medium" href="/services">
+                Services
+              </Link>
+
+              <Link className="brand-text-slight-black font-medium" href="/industries">
+                Industries
+              </Link>
+
+              <Link className="brand-text-slight-black font-medium" href="/prices">
+                Prices
               </Link>
             </motion.div>
           )}

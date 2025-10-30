@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo1 from "@/assets/images/home/11.svg";
 import Logo2 from "@/assets/images/home/12.svg"
 import Logo3 from "@/assets/images/home/13.svg"
+import SectionContainer from "../ui/SectionContainer";
 
 const benefits = [{
     logo: <Logo1 className="text-[#a1ffa6] w-6 h-auto"/>,
@@ -16,15 +17,20 @@ const benefits = [{
 
 const Banner = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-            xl:px-0 xl:gap-20 
-            lg:px-20 lg:gap-10 
-            md:px-20 
-            max-md:px-5 max-md:py-10"
-        >
-            <div className="bg-black w-full flex items-center justify-between p-10 rounded-3xl">
-                <div className="w-[60%] flex flex-col items-start gap-10">
-                    <h1 className="font-heading font-bold text-5xl leading-16 text-white">Exclusive New Client Offer First 500 Calls at Half Price</h1>
+        <SectionContainer>
+            <div className="bg-black w-full flex items-center justify-between rounded-3xl
+                md:flex-row md:gap-0 md:p-10 
+                max-md:flex-col-reverse max-md:gap-14 max-md:p-5">
+                <div className="flex flex-col items-start gap-10
+                    lg:w-[60%]
+                    md:w-[50%] 
+                    max-md:w-full">
+                    <h1 className="font-heading font-bold leading-16 text-white
+                        xl:leading-20
+                        lg:text-5xl lg:leading-14
+                        md:text-4xl md:leading-10
+                        max-md:text-3xl max-md:leading-10
+                        max-sm:text-2xl">Exclusive New Client Offer First 500 Calls at Half Price</h1>
                     <Link 
                         className="py-5 px-10 rounded-xl text-white"
                         style={{
@@ -35,7 +41,10 @@ const Banner = () => {
                         Get Started Today
                     </Link>
                 </div>
-                <div className="w-[35%] flex flex-col gap-5">
+                <div className="flex flex-col gap-5
+                    lg:w-[35%]
+                    md:w-[45%] 
+                    max-md:w-full">
                         {benefits.map((list, index) => (
                             <div style={{
                               background: "linear-gradient(91deg, rgba(3, 22, 8, 0.7) 0%, rgb(7 47 15)"
@@ -50,7 +59,7 @@ const Banner = () => {
                         ))}
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

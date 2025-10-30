@@ -1,13 +1,9 @@
+import SectionContainer from "../ui/SectionContainer";
 
 
 const Introduction = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer>
             <div className="flex items-center justify-between">
               <div className="w-1/2 flex flex-col gap-5 items-start">
                 <div className="rounded-lg px-5 py-3 font-bold font-heading shadow-1">
@@ -19,7 +15,7 @@ const Introduction = () => {
                 <p className="text-gray-500">Leadsourze earns great feedback from clients for delivering reliable and efficient outsourcing services that help businesses grow faster.</p>
               </div>
             </div>
-        </div>
+        </SectionContainer>
     )
 }
 

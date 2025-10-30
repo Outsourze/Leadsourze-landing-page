@@ -1,13 +1,9 @@
+import SectionContainer from "../ui/SectionContainer";
 
 
 const Form = () => {
     return (
-        <div className="max-w-7xl w-full py-20 m-auto flex items-center justify-between
-          xl:px-0 xl:gap-20 
-          lg:px-20 lg:gap-10 
-          md:px-20 
-          max-md:px-5 max-md:py-10"
-        >
+        <SectionContainer style={"w-full"}>
            <div className="brand-bg-green text-white px-10 py-10 w-full flex flex-col gap-10 rounded-2xl">
                 <h2 className="font-heading text-2xl font-semibold">General Info</h2>
 
@@ -80,7 +76,7 @@ const Form = () => {
                     </button>
                 </form>
            </div>
-        </div>
+        </SectionContainer>
     )
 }
 
