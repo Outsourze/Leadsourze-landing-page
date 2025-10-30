@@ -130,7 +130,10 @@ const ListIndustries = () => {
         <SectionContainer>
             <div className="w-full flex flex-wrap justify-between gap-x-5 gap-y-10">
                 {industryData.map((list, index) => (
-                    <div key={index} className="w-[31%] shadow-2 flex flex-col gap-5 p-5 rounded-xl">
+                    <div key={index} className="shadow-2 flex flex-col gap-5 p-5 rounded-xl
+                        lg:w-[31%] 
+                        md:w-[48%]
+                        max-md:w-full">
                         <h2 className="text-2xl font-heading font-semibold">{list.title} <span className="brand-text-green">{list.highlighTitle}</span></h2>
                         <p className="text-sm text-gray-500">{list.dscrpt}</p>
                         <h3 className="brand-text-green font-heading font-semibold text-lg">{list.listTitle}</h3>

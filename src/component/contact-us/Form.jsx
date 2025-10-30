@@ -8,8 +8,11 @@ const Form = () => {
                 <h2 className="font-heading text-2xl font-semibold">General Info</h2>
 
                 <form className="flex flex-col gap-5">
-                    <div className="flex items-center justify-between gap-5">
-                        <div className="flex flex-col gap-1 w-[50%]">
+                    <div className="flex items-center justify-between gap-5
+                        md:flex-row
+                        max-md:flex-col">
+                        <div className="flex flex-col gap-1 
+                            md:w-[50%] max-md:w-full">
                             <label htmlFor="firstName">First Name</label>
                             <input 
                                 name="firstName" 
@@ -17,7 +20,8 @@ const Form = () => {
                                 className="outline px-4 py-2 rounded-full "
                             />
                         </div>
-                        <div className="flex flex-col gap-1 w-[50%]">
+                        <div className="flex flex-col gap-1 
+                            md:w-[50%] max-md:w-full">
                             <label htmlFor="lastName">Last Name</label>
                             <input 
                                 name="lastName" 
@@ -26,8 +30,12 @@ const Form = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex items-center justify-between gap-5">
-                        <div className="flex flex-col gap-1 w-[50%]">
+                    <div className="flex items-center justify-between gap-5
+                        md:flex-row
+                        max-md:flex-col">
+                        <div className="flex flex-col gap-1 
+                            md:w-[50%]
+                            max-md:w-full">
                             <label htmlFor="email">Email Address</label>
                             <input 
                                 name="email" 
@@ -35,7 +43,9 @@ const Form = () => {
                                 className="outline px-4 py-2 rounded-full "
                             />
                         </div>
-                        <div className="flex flex-col gap-1 w-[50%]">
+                        <div className="flex flex-col gap-1 
+                            md:w-[50%]
+                            max-md:w-full">
                             <label htmlFor="phoneNum">Phone Number</label>
                             <input 
                                 name="phoneNum" 
@@ -44,8 +54,12 @@ const Form = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex items-center justify-between gap-5">
-                        <div className="flex flex-col gap-1 w-[50%]">
+                    <div className="flex items-center justify-between gap-5
+                        md:flex-row
+                        max-md:flex-col">
+                        <div className="flex flex-col gap-1 
+                            md:w-[50%]
+                            max-md:w-full">
                             <label htmlFor="company">Company</label>
                             <input 
                                 name="company" 
@@ -53,7 +67,9 @@ const Form = () => {
                                 className="outline px-4 py-2 rounded-full "
                             />
                         </div>
-                        <div className="flex flex-col gap-1 w-[50%]">
+                        <div className="flex flex-col gap-1 
+                            md:w-[50%]
+                            max-md:w-full">
                             <label htmlFor="industry">Choose Industry</label>
                             <input 
                                 name="industry" 

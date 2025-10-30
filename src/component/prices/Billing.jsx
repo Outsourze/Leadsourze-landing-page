@@ -22,16 +22,25 @@ const Billing = () => {
         <SectionContainer>
           <div className="flex flex-col gap-10">
             <h2 className="text-[#444444] text-3xl font-bold">Billing & Deposits</h2>   
-            <div className="flex items-start justify-between">
-                <div className="w-[73%] flex flex-wrap  justify-between gap-5 gap-y-8">
+            <div className="flex items-start justify-between
+                lg:flex-row
+                md:flex-col">
+                <div className="flex flex-wrap  justify-between gap-5 gap-y-8
+                    lg:w-[73%] 
+                    md:w-full
+                    max-md:w-full">
                     {billingList.map((list, index) => (
-                        <div className={`${index === 0 ? "outline-[#2E7D32]" : "outline-gray-300"} w-[48%] flex flex-col gap-8 outline rounded-lg p-5`}>
+                        <div className={`${index === 0 ? "outline-[#2E7D32]" : "outline-gray-300"} flex flex-col gap-8 outline rounded-lg p-5
+                        md:w-[48%] max-md:w-full`}>
                             <Image alt="imagesT" width={50} src={list.logo}/>
                             <p className="font-medium ">{list.dscrpt}</p>
                         </div>
                     ))}
                 </div>
-                <div className="w-[25%] flex items-end justify-end relative">
+                <div className="flex items-end justify-end relative
+                    lg:w-[25%] lg:block
+                    md:hidden
+                    max-md:hidden">
                     <Image src={suit} alt="suit" width={300} className="rounded-xl"/>
                     <div className="absolute w-[450px] bottom-0 -left-[100%] shadow-2 py-7 px-10 rounded-2xl bg-white flex gap-5 items-start justify-between">
                         <div className="flex flex-col gap-2 w-[60%]">

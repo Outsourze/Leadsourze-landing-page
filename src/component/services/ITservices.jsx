@@ -15,8 +15,10 @@ const iTservicesData = [
 const ITServices = () => {
     return (
         <SectionContainer>
-            <div className="flex items-center gap-5 justify-between w-full">
-                <div className="relative w-[40%] h-[400px]">
+            <div className="flex gap-5 justify-between w-full
+                lg:items-center md:items-start">
+                <div className="relative w-[40%] h-[400px]
+                max-md:hidden">
                   <Image 
                     src={computer}
                     alt="computer"
@@ -24,7 +26,8 @@ const ITServices = () => {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <div className="w-1/2 flex flex-col gap-5 items-start">
+                <div className="flex flex-col gap-5 items-start
+                    md:w-1/2 max-md:w-full">
                     <h1 className="font-heading text-4xl font-semibold text-navy">Database Management & Cleansing</h1>
                     <p className="">With every campaign, we refine your lists to save you time and money:</p>
 
