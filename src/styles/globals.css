@@ -63,6 +63,10 @@ body {
   }
   /*  */
 
+  .bg-subtle {
+    background-color: #f7fdf7;
+  }
+
   .brand-bg-green {
     background-color: var(--color-brand-green);
   }

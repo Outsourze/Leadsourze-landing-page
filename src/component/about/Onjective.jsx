@@ -36,7 +36,7 @@ const Objective = () => {
                 <div className="items-center justify-between flex
                     md:flex-row
                     max-md:flex-col-reverse max-md:gap-10">
-                    <div className="shadow-2 py-14 px-5 rounded-lg flex flex-col gap-10
+                    <div className="bg-white shadow-2 py-14 px-5 rounded-lg flex flex-col gap-10
                         md:w-1/2 
                         max-md:w-[80%]
                         max-sm:w-full">
@@ -47,14 +47,14 @@ const Objective = () => {
                                 md:text-3xl 
                                 max-md:text-3xl">Our <span className="brand-text-green">Mission</span></p>
                         </div>
-                        <p className="text-gray-500">To provide New Zealand businesses with dependable telesales campaigns that generate consistent results and improve data quality.</p>
+                        <p className="text-gray-500">To provide  <span className="font-bold">New Zealand & Australian</span> businesses with dependable telesales campaigns that generate consistent results and improve data quality.</p>
                     </div>
                     <Image className="w-[40%]" src={mission}/>
                 </div>
                 <div className="flex items-center justify-between
                     md:flex-row-reverse 
                     max-md:flex-col-reverse max-md:gap-10">
-                    <div className="shadow-2 p-5 rounded-lg flex flex-col gap-10
+                    <div className="bg-white shadow-2 p-5 rounded-lg flex flex-col gap-10
                         md:w-1/2 
                         max-md:w-[80%]
                         max-sm:w-full">

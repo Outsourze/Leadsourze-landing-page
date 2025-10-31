@@ -14,7 +14,7 @@ const GetStarted = () => {
       <div className="brand-bg-green w-full px-10 py-12 flex flex-col justify-center items-center gap-10 rounded-xl relative overflow-hidden">
         <h1 className="text-[#2D3134] font-heading font-semibold text-center
           md:text-4xl max-md:text-3xl max-sm:text-2xl">
-          Partner with the telesales specialists trusted by New Zealand businesses.
+          Partner with the telesales specialists trusted by  New Zealand & Australian businesses.
         </h1>
 
         <Button bgColor={"bg-slight-orange"} url={"/"} textColor={"text-white"} style={"py-3"}>
