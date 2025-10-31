@@ -1,28 +1,34 @@
 import SectionContainer from "../ui/SectionContainer";
-
+import heroPng from "@/assets/images/services/hero.png";
+import Image from "next/image";
 
 const Introduction = () => {
-    return (
-        <SectionContainer>
-            <div className="flex items-center justify-between
-            lg:flex-row gap-5
-            md:flex-col 
-            max-md:flex-col ">
-              <div className="flex flex-col gap-5 
-              lg:items-start 
-              md:items-center md:w-1/2 
-              max-md:items-center max-md:w-full">
-                <div className="rounded-lg px-5 py-3 font-bold font-heading shadow-1">
-                  <p className="brand-text-green">WHY CHOOSE FINANCY ?</p>
-                </div>
-                <h1 className="text-navy text-7xl font-heading font-extrabold">Services</h1>
-              </div>
-              <div className="w-1/2">
-                <p className="text-gray-500 lg:text-left md:text-center max-md:text-center lg:text-base md:text-lg max-md:text-lg max-sm:text-base">Leadsourze earns great feedback from clients for delivering reliable and efficient outsourcing services that help businesses grow faster.</p>
-              </div>
-            </div>
-        </SectionContainer>
-    )
-}
+  return (
+    <SectionContainer>
+      <div
+        className="flex flex-col-reverse lg:flex-row-reverse items-center justify-between gap-10"
+      >
+        {/* Text Block */}
+        <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2">
+          <h1 className="text-navy text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold leading-tight">
+            Services
+          </h1>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            At <span className="font-semibold text-navy">Leadsourze</span>, we deliver reliable, efficient, and scalable outsourcing solutions that empower businesses to grow faster and operate smarter.
+          </p>
+        </div>
+
+        {/* Optional Image / Visual Placeholder */}
+        <div className="lg:w-1/2 w-full flex justify-center">
+        <Image 
+          src={heroPng}
+          alt="Outsourcing services illustration"
+          className="max-w-sm lg:max-w-md w-full object-contain rounded-lg"
+        />
+        </div>
+      </div>
+    </SectionContainer>
+  );
+};
 
 export default Introduction;
