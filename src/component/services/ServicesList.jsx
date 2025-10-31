@@ -8,7 +8,9 @@ const ServicesList = () => {
     return (
         <SectionContainer style={"flex-col"}>
             <div className="flex items-start justify-between w-full gap-20
-            lg:flex-row md:flex-col max-md:flex-col">
+            lg:flex-row
+            md:flex-col 
+            max-md:flex-col">
                 <div className="flex gap-10 
                     lg:flex-col lg:w-1/2
                     md:flex-row md:w-full
