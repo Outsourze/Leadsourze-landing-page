@@ -13,7 +13,7 @@ export default function Layout({ children }) {
       </Head>
       <div className={`${oneSans.variable} ${urban.variable} ${jakarta.variable} w-full main-container`}>
         <Header />
-        <main className='lg:pt-30 lg:pb-16 md:py-16 md:pb-5 max-md:py-16 max-sm:pb-2'>
+        <main className='lg:pt-26 lg:pb-16 md:py-16 md:pb-5 max-md:py-16 max-sm:pb-2'>
           {children}
         </main>
         <Footer />
