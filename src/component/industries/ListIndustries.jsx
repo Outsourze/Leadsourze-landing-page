@@ -102,7 +102,7 @@ const industryData = [{
 }, {
     title: "Real",
     highlighTitle: "Estate",
-    dscrpt: "With over 15,000 licensed agents in New Zealand, competition is fierce. Consistent follow-up is the difference between closing deals and losing them.",
+    dscrpt: "With over 15,000 licensed agents in  New Zealand & Australian, competition is fierce. Consistent follow-up is the difference between closing deals and losing them.",
     listTitle: "What we do for Real Estate:",
     list: [
         "Qualify buyers & sellers so you only engage serious prospects",

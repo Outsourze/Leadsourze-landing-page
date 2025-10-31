@@ -60,7 +60,7 @@ const Footer = () => {
                           <LeadsourzeLogo className="lg:w-52 md:w-36 max-md:w-36 absolute top-1/2 -translate-y-1/2"/>
                         </Link>
                
-                        <p className="xl:text-[15px] md:text-xs max-md:text-xs max-md:border-b-gray-300 max-md:border-b max-md:pb-2 text-gray-500">Outsourze is a remote staffing and outsourcing solutions company based in the Philippines. .</p>
+                        <p className="xl:text-[15px] md:text-xs max-md:text-xs max-md:border-b-gray-300 max-md:border-b max-md:pb-2 text-gray-500">Leadsourze is your on-demand lead generation engine — delivering qualified leads and booked meetings so you can focus on closing deals.</p>
                         <div className="flex items-center 
                         lg:gap-7 md:gap-5 max-md:absolute max-md:bottom-0 max-md:right-5 max-md:gap-2">
                             {socialMedia.map((social, index) => (
@@ -78,9 +78,19 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center gap-5">
                             <p className="font-medium">Visit our other sites</p>
-                            <div className="text-gray-500 flex items-center gap-2">
-                                <Link href={"/"}>Outsourze</Link>
-                                <Link href={"/"}>Talentsourze</Link>
+                            <div className="flex items-center gap-2">
+                                <Link 
+                                    className="text-gray-500 hover:text-gray-700"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label={`Visit Outsourze`}
+                                    href={"https://outsourze.com/"}>Outsourze</Link>
+                                <Link 
+                                    className="text-gray-500 hover:text-gray-700"
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label={`Visit Talentsourze`}
+                                    href={"https://talentsourze.com/"}>Talentsourze</Link>
                             </div>
                         </div>
                     </div>

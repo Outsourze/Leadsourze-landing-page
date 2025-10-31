@@ -10,14 +10,15 @@ import currentLocIcon from "@/assets/images/home/maps/Group 13639.png";
 import locIcon from "@/assets/images/home/maps/Group.png";
 import path from "@/assets/images/home/maps/path.png";
 import SectionContainer from "../ui/SectionContainer";
+import Link from "next/link";
 
 const Introduction = () => {
     return (
         <SectionContainer>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center gap-3">
                 <div className="flex flex-col gap-8 items-start
                     xl:w-1/2 
-                    lg:w-[40%]
+                    lg:w-[45%]
                     md:w-full
                     max-md:w-full">
                     <div className="rounded-lg px-5 py-3 font-bold font-heading shadow-1">
@@ -29,12 +30,18 @@ const Introduction = () => {
                         md:text-6xl
                         max-md:text-5xl">Your Leads. <br/>Our Calls. <br/> Smarter Sales.</h1>
                     <p className="brand-text-green 
-                        xl:leading-7 lg:leading-6 md:leading-5 max-md:leading-5">Lead Sourze delivers professional telesales campaigns for New Zealand businesses across real estate, solar, finance, services, and more. With proven systems, expert oversight, and AI-enhanced calling, we turn your contact lists into qualified conversations, appointments, and measurable results.</p>
+                        xl:leading-7 lg:leading-6 md:leading-5 max-md:leading-5">Lead Sourze delivers professional telesales campaigns for  <span className="font-bold">New Zealand & Australian</span> businesses across real estate, solar, finance, services, and more. With proven systems, expert oversight, and AI-enhanced calling, we turn your contact lists into qualified conversations, appointments, and measurable results.</p>
                     <div className="flex items-center gap-5">
-                        <Button style={"!p-4"} url={"/"} bgColor={"brand-bg-green"} textColor={"text-white"}>
-                            Schedule a Consultation
-                        </Button>
-                        <Button style={"!p-4"} url={"/"} bgColor={"brand-bg-green"} textColor={"text-white"}>
+                        <Link 
+                            className="text-white brand-bg-green p-4 font-cta rounded-md flex items-center gap-2
+                                max-md:py-2 max-md:px-3 max-md:text-sm"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label={`Consultation`}
+                            href={"https://calendly.com/paul-outsourze/30min"}>
+                                Schedule a Consultation
+                        </Link>
+                        <Button style={"!p-4"} url={"/prices"} bgColor={"brand-bg-green"} textColor={"text-white"}>
                             See Our Pricing
                         </Button>
                     </div>
@@ -76,7 +83,8 @@ const Introduction = () => {
                                     xl:text-2xl lg:text-xl">$2,700</span>/month
                             </p>
                             <h3 className="text-navy font-bold
-                                xl:text-2xl lg:text-xl">Beverly Springfield</h3>
+                                xl:text-2xl lg:text-xl">Pacific Vista</h3>
+                            <p className="text-[#6C727F] text-xs">Old Burleigh Road, Broadbeach</p>
                         </div>
                         <div className="flex items-center justify-between py-3 border-t border-t-gray-200">
                             <div className="flex items-center gap-2">
@@ -117,8 +125,8 @@ const Introduction = () => {
                             <p>
                                 <span className="brand-text-green text-lg font-extrabold">$1,600</span>/month
                             </p>
-                            <h3 className="text-navy font-bold">Tarpon Bay</h3>
-                            <p className="text-[#6C727F] text-xs">Palm Harbor, TX</p>
+                            <h3 className="text-navy font-bold">Riverstone Bay</h3>
+                            <p className="text-[#6C727F] text-xs">Monaco Street, Surfers Paradise</p>
                         </div>
                         <div className="flex items-center justify-between py-3 border-t border-t-gray-200">
                             <div className="flex items-center gap-1">
@@ -134,7 +142,7 @@ const Introduction = () => {
                             <div className="flex items-center gap-1">
                                 <Image
                                     width={14} height={14} src={icon3} alt="icon3"/>
-                                <p className="text-xs text-[#6C727F]">6x7.5 m²</p>
+                                <p className="text-xs text-[#6C727F]">6x8 m²</p>
                             </div>
                         </div>
                       </div>

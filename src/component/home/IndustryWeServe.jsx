@@ -27,7 +27,7 @@ const IndustryWeServe = () => {
                     lg:w-[35%]
                     md:w-full">
                     <h2 className="text-3xl font-bold font-heading">Industries We Serve</h2>
-                    <p>Trusted across multiple New Zealand industries:</p>
+                    <p>Trusted across multiple  New Zealand & Australian industries:</p>
                 </div>
                 <div className="flex flex-wrap gap-5 justify-between
                     lg:w-[65%] 

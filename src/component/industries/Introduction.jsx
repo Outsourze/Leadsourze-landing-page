@@ -16,7 +16,7 @@ const Introduction = () => {
                         <p className="brand-text-green
                             lg:text-base
                             md:text-sm
-                            max-md:text-xs">WHY CHOOSE FINANCY ?</p>
+                            max-md:text-xs">WHY CHOOSE LEADSOURZE ?</p>
                     </div>
                     <h1 className="font-extrabold font-heading text-white
                         lg:text-7xl md:text-5xl max-md:text-4xl max-sm:text-3xl">Industries</h1>

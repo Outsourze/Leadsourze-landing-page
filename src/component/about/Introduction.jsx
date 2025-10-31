@@ -11,7 +11,7 @@ const Introduction = () => {
                     <h1 className="font-bold font-heading 
                     lg:text-7xl lg:leading-22
                     md:text-5xl md:leading-14
-                    max-md:text-4xl max-md:leading-10">Trusted Telesales <br/> Partner for <br/> New Zealand Businesses</h1>
+                    max-md:text-4xl max-md:leading-10">Trusted Telesales <br/> Partner for <br/>  New Zealand & Australian Businesses</h1>
                     <p className="text-gray-500 
                         lg:leading-8
                         md:leading-6

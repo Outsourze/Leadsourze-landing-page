@@ -47,7 +47,7 @@ const Objective = () => {
                                 md:text-3xl 
                                 max-md:text-3xl">Our <span className="brand-text-green">Mission</span></p>
                         </div>
-                        <p className="text-gray-500">To provide New Zealand businesses with dependable telesales campaigns that generate consistent results and improve data quality.</p>
+                        <p className="text-gray-500">To provide  <span className="font-bold">New Zealand & Australian</span> businesses with dependable telesales campaigns that generate consistent results and improve data quality.</p>
                     </div>
                     <Image className="w-[40%]" src={mission}/>
                 </div>

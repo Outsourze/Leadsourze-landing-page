@@ -1,7 +1,8 @@
 import { RiCheckboxCircleLine } from "react-icons/ri";
 import blurBg from "@/assets/images/home/blur-bg.png";
 import castleImg from "@/assets/images/home/castle.png";
-import flagImg from "@/assets/images/home/flag.jpg";
+import nature from "@/assets/images/home/nature.png";
+import flagImg from "@/assets/images/home/flag.png";
 import Image from "next/image";
 import { FaLeaf } from "react-icons/fa";
 import { FaMap } from "react-icons/fa6";
@@ -91,11 +92,19 @@ const WhyOutsourze = () => {
                             width={600}
                         />
                         <div className="shadow-lg rounded-xl p-5 z-10 bg-white flex flex-col gap-5
-                            md:w-[70%] max-md:w-full">
-                            <Image src={castleImg} alt="castle"/>
+                            md:w-[80%] max-md:w-full">
+                            <div className="rounded-2xl overflow-hidden
+                                xl:h-[200px] lg:h-[170px] md:h-[250px]">
+                              <Image
+                                className="object-cover object-center"
+                                src={nature}
+                                alt="castle"
+                              />
+                            </div>
+
                             <div className="relative flex flex-col gap-5">
-                                <h3 className="font-heading font-bold text-lg">Liburan ke Bali  🚗</h3>
-                                <p className="text-gray-500 text-sm">14-29 Juni | by Shandika</p>
+                                <h3 className="font-heading font-bold text-lg">Queenstown 🏔️</h3>
+                                <p className="text-gray-500 text-sm">4–29 June | by Aiden Reid</p>
                                 <div className="flex items-center gap-5">
                                     <div className="p-3 rounded-full bg-gray-100 text-gray-500">
                                         <FaLeaf />
@@ -110,19 +119,19 @@ const WhyOutsourze = () => {
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-3">
                                         <BsBuildings className="text-gray-500"/>
-                                        <p className="text-sm text-gray-500">12 Orang pergi bersama</p>
+                                        <p className="text-sm text-gray-500">12 People joining</p>
                                     </div>
                                     <FaRegHeart className="brand-text-green"/>
                                 </div>
                                 <div className="absolute bg-white shadow-md flex items-start gap-5 px-5 py-3 rounded-xl
-                                    md:-right-1/2 md:-translate-x-1/2 
+                                    md:-right-[60%] md:-translate-x-1/2 
                                     max-md:right-0">
                                     <div className="relative rounded-full overflow-hidden h-12 w-12">
                                         <Image src={flagImg} alt="flag" fill className="object-cover object-left"/>
                                     </div>
                                     <div className="flex flex-col gap-3">   
                                         <p className="text-gray-500">Ongoing</p>
-                                        <h4 className="text-lg font-semibold">Jelajah Indonesia</h4>
+                                        <h4 className="text-lg font-semibold">Explore New Zealand</h4>
                                         <p><span className="brand-text-green font-medium">40%</span> completed</p>
                                         <div className="w-full h-1 brand-bg-green rounded-full flex items-end justify-end overflow-hidden">
                                             <div className="w-[60%] h-1 bg-gray-300"></div>
